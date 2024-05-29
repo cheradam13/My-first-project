@@ -41,6 +41,11 @@
     text-decoration: none;
     color: #1A1A1A;
     font-weight: bold;
+    transition: background-color .3s ease-in-out;
+}
+
+.logo:hover {
+    background-color: #FEBE02;
 }
 
 .navigation-holder {
@@ -57,7 +62,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 13px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
 }
 
 /* HEADER-TITLE */
@@ -103,7 +108,12 @@
     color: #1A1A1A;
     font-weight: bold;
     border-radius: 6px;
+    transition: background-color .3s ease-in-out;
 } 
+
+.join:hover {
+    background-color: #ce9e10;
+}
 
 .header-info-block {
     display: flex;
@@ -207,12 +217,15 @@
 
 .audio-detail {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .control {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .control i {
@@ -240,8 +253,8 @@
     right: 0;
 }
 
-.nav-link:hover {
-    color: #252424;
+.nav-link:hover a {
+    color: #FEBE02;
 }
 
 .header-info-block {
@@ -360,10 +373,12 @@
     border-bottom: 1px solid #939495;
     padding: 30px 0;
   }
+
   .left-block {
     display: flex;
     align-items: center;
   }
+
   .course-number {
     font-style: normal;
     font-weight: 600;
@@ -375,6 +390,7 @@
     margin-left: 60px;
     line-height: 1.5;
   }
+
   .course-name {
     font-style: normal;
     font-weight: 400;
@@ -382,10 +398,11 @@
     letter-spacing: 0.8px;
     color: #000000;
   }
+
   .course-count {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     color: #9A9A9B;
   }
@@ -394,19 +411,13 @@
     margin-left: 60px;
     line-height: 1.5;
   }
+
   .course-name {
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     letter-spacing: 0.8px;
     color: #000000;
-  }
-  .course-count {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    color: #9A9A9B;
   }
 
   @media (max-width: 1120px) {
